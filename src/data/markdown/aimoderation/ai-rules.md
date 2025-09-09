@@ -34,7 +34,6 @@ AI works best, if rules are presented as a numbered list.
 1. Rule 1
 2. Rule 2
 3. Rule 3
-4. Rule 4
 ```
 
 ---
