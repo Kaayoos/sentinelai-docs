@@ -1,0 +1,51 @@
+{
+  "site": {
+    "name": "SentinelAI",
+    "description": "A modern, dark-themed wiki and documentation website",
+    "baseUrl": "https://sentinelai.dev",
+    "logo": "https://sentinelai.dev/img/logo2.png",
+    "favicon": "https://sentinelai.dev/img/logo2.png"
+  },
+  "seo": {
+    "title": "SentinelAI Docs - Beautiful Documentation",
+    "description": "Create beautiful documentation with SentinelAI Docs - a modern, dark-themed wiki platform with full markdown support",
+    "keywords": ["documentation", "wiki", "markdown", "modern", "dark theme"],
+    "author": "MinimalPulse"
+  },
+  "social": {
+    "og": {
+      "title": "SentinelAI Docs - Beautiful Documentation",
+      "description": "Create beautiful documentation with SentinelAI Docs",
+      "image": "https://sentinelai.dev/img/logo2.png",
+      "type": "website"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@modernwiki"
+    }
+  },
+  "footer": {
+    "text": "© 2024 ModernWiki. Built with modern web technologies.",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/modernwiki/modernwiki"
+      },
+      {
+        "name": "Documentation",
+        "url": "/docs/Getting%20Started/"
+      }
+    ]
+  },
+  "theme": {
+    "defaultMode": "dark",
+    "allowToggle": false
+  },
+  "features": {
+    "search": true,
+    "breadcrumbs": true,
+    "tableOfContents": true,
+    "syntaxHighlighting": true,
+    "copyCodeBlocks": true
+  }
+}

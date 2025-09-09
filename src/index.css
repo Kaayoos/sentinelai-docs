@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Wiki/Docs Design System - Dark Theme Optimized */
+
+@layer base {
+  :root {
+    /* Light theme (fallback) */
+    --background: 210 40% 98%;
+    --foreground: 255 100% 100%; /* White text */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+    --radius: 0.75rem;
+    
+    /* Wiki-specific colors */
+    --docs-bg: 210 40% 98%;
+    --docs-sidebar: 220 13% 91%;
+    --docs-content: 0 0% 100%;
+    --docs-border: 220 13% 91%;
+    --docs-code-bg: 220 13% 95%;
+    --docs-accent: 217 91% 60%;
+    --docs-accent-hover: 217 91% 55%;
+
+    /* Sidebar colors */
+    --sidebar-background: 222 84% 5%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 216 34% 17%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 216 34% 17%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    /* Modern Dark Theme - Primary colors */
+    --background: 224 71% 4%;
+    --foreground: 255 100% 100%; /* White text in dark mode */
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 213 31% 91%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --ring: 216 34% 17%;
+    
+    /* Wiki-specific dark colors */
+    --docs-bg: 224 71% 4%;
+    --docs-sidebar: 222 84% 5%;
+    --docs-content: 223 47% 6%;
+    --docs-border: 216 34% 17%;
+    --docs-code-bg: 220 13% 9%;
+    --docs-accent: 217 91% 60%;
+    --docs-accent-hover: 217 91% 65%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(234 89% 74%) 100%);
+    --gradient-sidebar: linear-gradient(180deg, hsl(222 84% 5%) 0%, hsl(224 71% 4%) 100%);
+    --gradient-content: linear-gradient(135deg, hsl(223 47% 6%) 0%, hsl(222 84% 5%) 100%);
+
+    /* Sidebar colors for dark mode */
+    --sidebar-background: 222 84% 5%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 216 34% 17%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 216 34% 17%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Typography improvements */
+  .docs-prose {
+    @apply prose prose-slate dark:prose-invert max-w-none;
+    @apply prose-headings:scroll-mt-20 prose-headings:font-semibold;
+    @apply prose-pre:bg-[hsl(var(--docs-code-bg))] prose-pre:border prose-pre:border-[hsl(var(--docs-border))];
+    @apply prose-code:bg-[hsl(var(--muted))] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-mono prose-code:text-sm;
+    @apply prose-img:rounded-lg prose-img:shadow-lg;
+  }
+
+  /* Custom scrollbars */
+  .docs-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .docs-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--docs-bg));
+  }
+  
+  .docs-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--docs-border));
+    border-radius: 3px;
+  }
+  
+  .docs-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--docs-accent));
+  }
+
+  /* Animations */
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+}
