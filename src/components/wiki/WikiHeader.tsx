@@ -69,7 +69,7 @@ export function WikiHeader() {
             <div className="flex items-center space-x-2">
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://github.com/modernwiki/modernwiki"
+                  href="https://github.com/Kaayoos/sentinelai-docs"
                   target="_blank"
                   rel="noreferrer"
                   className="h-8 w-8 px-0"

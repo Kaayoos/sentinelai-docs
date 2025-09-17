@@ -71,7 +71,7 @@ export default function DocsHome() {
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://github.com/modernwiki/modernwiki" target="_blank" rel="noreferrer">
+                <a href="https://github.com/Kaayoos/sentinelai-docs" target="_blank" rel="noreferrer">
                   View on GitHub
                 </a>
               </Button>

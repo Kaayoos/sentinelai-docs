@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/modernwiki/modernwiki.git
+git clone https://github.com/Kaayoos/sentinelai-docs.git
 
 # Navigate to the project directory
 cd modernwiki
