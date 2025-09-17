@@ -26,7 +26,6 @@ This is the documentation website for **SentinelAI Documentation** on how to run
 
    ```
    http://localhost:8000
-
    ```
 ---
 
